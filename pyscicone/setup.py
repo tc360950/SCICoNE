@@ -36,6 +36,6 @@ setup(
     include_package_data=True,
     test_suite="tests",
     tests_require=test_requirements,
-    extras_require={'notebooks': notebook_requirements,
+    extras_require={'scicone_on_conet': notebook_requirements,
                     'test': test_requirements},
 )
