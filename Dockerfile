@@ -9,7 +9,7 @@ RUN  apt install libnlopt-dev -y && apt install libnlopt-cxx-dev -y
 WORKDIR /code
 COPY ./ ./
 
-RUN pip install CONET/python/conet-py
+RUN pip install conet/python/conet-py
 
 RUN mkdir build && cd build && cmake ../scicone/ && make
 RUN pip install pyscicone/
